@@ -1,0 +1,31 @@
+{
+  "name": "youtube-to-mp3mp4-converter",
+  "version": "1.0.0",
+  "description": "A tool to convert YouTube videos to MP3 and MP4 formats",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev-full": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "keywords": [
+    "youtube",
+    "mp3",
+    "mp4",
+    "converter",
+    "downloader"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "ytdl-core": "^4.11.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.0.1"
+  }
+}
