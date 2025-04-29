@@ -26,3 +26,8 @@ memory-bank/
 node_modules/
 
 env/
+
+.env
+
+.env.local
+
